@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Heroes</title>
+  </head>
+  <body style="background-color:slategrey; text-align: center;">
+    <h1>Create a Team and Heroes!</h1>
+
+    <form action="/teams" method="post">
+      <div class="team" style="padding: 0 0 10px 0">
+        <h5 style="display:inline; padding-right:10px">Team Name: <input id="team_name" type="text" name="team[name]" style="padding-left:50px"></h5>
+        <h5 style="display:inline; padding-right:10px">Team Motto: <input id="team_motto" type="text" name="team[motto]" style="padding-left:200px"></h5>
+        <input type="submit" value="submit"><br/>
+      </div>
+
+      <div class="wrapper" style="display: inline-block; padding: 2px">
+        <div class="hero" style="background-color: SNOW; border-style: solid; display: inline-block; padding: 0 10px">
+          <h2>Hero 1</h2>
+          <p>Hero's Name: <input id="member1_name" type="text" name="team[members][][name]"></p>
+          <p>Hero's Power: <input id="member1_power" type="text" name="team[members][][power]"></p>
+          <p>Hero's Biography: <input id="member1_bio" type="text" name="team[members][][biography]"></p>
+        </div>
+
+        <div class="hero" style="background-color: SNOW; border-style: solid; display: inline-block; padding: 0 10px">
+          <h2>Hero 2</h2>
+            <p>Hero's Name: <input id="member2_name" type="text" name="team[members][][name]"></p>
+            <p>Hero's Power: <input id="member2_power" type="text" name="team[members][][power]"></p>
+            <p>Hero's Biography: <input id="member2_bio" type="text" name="team[members][][biography]"></p>
+
+        </div>
+
+        <div class="hero" style="background-color: SNOW; border-style: solid; display: inline-block; padding: 0 10px">
+          <h2>Hero 3</h2>
+            <p>Hero's Name: <input id="member3_name" type="text" name="team[members][][name]"></p>
+            <p>Hero's Power: <input id="member3_power" type="text" name="team[members][][power]"></p>
+            <p>Hero's Biography: <input id="member3_bio" type="text" name="team[members][][biography]"></p>
+        </div>
+      </div>
+
+    </form>
+  </body>
+</html>

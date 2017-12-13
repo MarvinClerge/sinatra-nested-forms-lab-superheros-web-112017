@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Heroes</title>
+  </head>
+  <body style="background-color:slategrey; text-align: center;">
+    <div style="width: 50%; margin: 0 auto; text-align: left;">
+      <h1 style="text-align: center; font-size:50px;line-height: 1px;">
+        <%= @team["name"] %>
+      </h1>
+      <p style="text-align: center">Team Motto: <%= @team["motto"] %></p>
 
 
 
+      <% @team["members"].each do |member|%>
+        <div style="background-color:SNOW; border-style: solid;">
+          <h2 style="padding: 0 5px">Hero Name: <%= member["name"] %></h2>
+          <p style="padding: 0 20px">Hero Power: <%= member["power"] %></p>
+          <p style="padding: 0 20px">Hero Biography: <%= member["biography"] %></p>
+        </div>
+      <%end%>
+  </div>
+  </body>
+</html>
